@@ -561,7 +561,31 @@ void task2()
 	// Napisz program, który poprosi u¿ytkownika o podanie oceny w skali 100 - punktowej i przeliczy j¹ na ocenê procentow¹ w przedziale od 0 do 100. Wyœwietl wynik.
 	void zad12()
 	{
-		cout << "";
+		int number;
+		cout << "Podaj ocene w skali punktowej (1-6): \t";
+		cin >> number;
+		if (number > -1 && number <= 29) {
+			cout << "Ocena niedostateczna";
+		}
+		else if (number > 29 && number < 50) {
+			cout << "Ocena dopuszczajaca";
+		}
+		else if (number > 49 && number < 73) {
+			cout << "Ocena dostateczna";
+		}
+		else if (number > 72 && number < 89) {
+			cout << "Ocena dobra";
+		}
+		else if (number > 89 && number < 96) {
+			cout << "Ocena bardzo dobra";
+		}
+		else if (number > 95 && number < 101) {
+			cout << "Ocena celujaca";
+		}
+		else {
+			cout << "Nieprawidlowa ocena!";
+		}
+
 	}
 	// Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej oceny (np. "bardzo dobry" dla oceny 5, "dobry" dla oceny 4 itd.)
 	void zad13()
@@ -650,6 +674,6 @@ int main()
 	 zad9();
 	
 	zad10();*/
-	zad11();
+	zad12();
 	
 }

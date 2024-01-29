@@ -382,7 +382,7 @@ void task2()
 		int num;
 		cout << "Podaj liczbe 1-7: ";
 		cin >> num;
-		if (num == 1)
+		/*if (num == 1)
 		{
 			cout << "Poniedzialek";
 		}
@@ -412,7 +412,36 @@ void task2()
 		}
 		else {
 			cout << "Blad! Podaj numer od 1 do 7!";
+		}*/
+
+		switch (num)
+		{
+		case 1:
+			cout << "Poniedzialek";
+			break;
+		case 2:
+			cout << "Wtorek";
+			break;
+		case 3:
+			cout << "Sroda";
+			break;
+		case 4:
+			cout << "Czwartek";
+			break;
+		case 5:
+			cout << "Piatek";
+			break;
+		case 6:
+			cout << "Sobota";
+			break;
+		case 7:
+			cout << "Niedziela";
+			break;
+		default:
+			cout << "Nie ma takiego dnia tygodnia!";
+			break;
 		}
+
 	}
 	// Napisz program, który wczyta numer miesi¹ca i wyœwietli jego s³owny odpowiednik.
 	void zad7()
@@ -674,6 +703,6 @@ int main()
 	 zad9();
 	
 	zad10();*/
-	zad12();
+	zad6();
 	
 }

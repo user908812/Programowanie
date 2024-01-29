@@ -531,12 +531,37 @@ void task2()
 	// Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci trzech odcinków i sprawdzi, czy mo¿na zbudowaæ z nich trójk¹t. Wyœwietl odpowiedni komunikat.
 	void zad11()
 	{
-		
+		int side1, side2, side3;
+		cout << "Podaj dlugosc pierwszego boku: ";
+		cin >> side1;
+		cout << "Podaj dlugosc drugiego boku: ";
+		cin >> side2;
+		cout << "Podaj dlugosc trzeciego boku: ";
+		cin >> side3;
+
+		if (side1 > side2 && side1 > side3) {
+			if (side2 + side3 > side1) {
+				cout << "Mozna zbudowac trojkat!";
+			}
+		}
+		else if (side2 > side3 && side2 > side1) {
+			if (side1 + side3 > side2) {
+				cout << "Mozna zbudowac trojkat!";
+			}
+			else if (side3 > side1 && side3 > side2) {
+				if (side1 + side2 > side3) {
+					cout << "Mozna zbudowac trojkat!";
+				}
+				else {
+					cout << "Nie mozna zbudowac trojkata";
+				}
+			}
+		}
 	}
 	// Napisz program, który poprosi u¿ytkownika o podanie oceny w skali 100 - punktowej i przeliczy j¹ na ocenê procentow¹ w przedziale od 0 do 100. Wyœwietl wynik.
 	void zad12()
 	{
-
+		cout << "";
 	}
 	// Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej oceny (np. "bardzo dobry" dla oceny 5, "dobry" dla oceny 4 itd.)
 	void zad13()
@@ -625,6 +650,6 @@ int main()
 	 zad9();
 	
 	zad10();*/
-	zad3();
+	zad11();
 	
 }

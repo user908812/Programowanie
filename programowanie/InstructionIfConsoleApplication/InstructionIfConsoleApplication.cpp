@@ -678,6 +678,37 @@ void task2()
 			cout << "Rok prawidlowy";
 		}
 	}
+	void zad15()
+	{
+		int number;
+		cout << "Podaj liczbê: \n";
+		cin >> number;
+
+		while (number < 0) {
+			cout << "Nieprawidlowa liczba! podaj liczbe wieksza od 0!	";
+			cin >> number;
+		}
+		cout << "Twoja liczba to " << number << "\n";
+
+		/*if (number < 0) {
+			cout << "Nieprawidlowa liczba! podaj dodatnia liczbe: ";
+			cin >> number;
+		}
+		if (number < 0) {
+			cout << "Nieprawidlowa liczba! podaj dodatnia liczbe: ";
+			cin >> number;
+		}
+		if (number < 0) {
+			cout << "Nieprawidlowa liczba! podaj dodatnia liczbe: ";
+			cin >> number;
+		}
+		if (number < 0) {
+			cout << "Nieprawidlowa liczba! podaj dodatnia liczbe: ";
+			cin >> number;
+		}*/
+		
+		
+	}
 
 int main()
 {
@@ -703,6 +734,6 @@ int main()
 	 zad9();
 	
 	zad10();*/
-	zad6();
+	zad15();
 	
 }

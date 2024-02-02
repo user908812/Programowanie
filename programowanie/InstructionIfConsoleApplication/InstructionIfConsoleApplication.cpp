@@ -261,7 +261,6 @@ void task2()
 			cout << "2 lub 3 liczby sa rowne! Sprobuj ponownie!";
 		}
 	}
-
 	// Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych i sprawdzi, czy s¹ one równe.Wyœwietl odpowiedni komunikat.
 	void zad1()
 	{
@@ -382,38 +381,7 @@ void task2()
 		int num;
 		cout << "Podaj liczbe 1-7: ";
 		cin >> num;
-		/*if (num == 1)
-		{
-			cout << "Poniedzialek";
-		}
-		else if (num == 2)
-		{
-			cout << "Wtorek";
-		}
-		else if (num == 3)
-		{
-			cout << "Sroda";
-		}
-		else if (num == 4)
-		{
-			cout << "Czwartek";
-		}
-		else if (num == 5)
-		{
-			cout << "Piatek";
-		}
-		else if (num == 6)
-		{
-			cout << "Sobota";
-		}
-		else if (num == 7)
-		{
-			cout << "Niedziela";
-		}
-		else {
-			cout << "Blad! Podaj numer od 1 do 7!";
-		}*/
-
+		// Switch case zamiast if!
 		switch (num)
 		{
 		case 1:
@@ -441,7 +409,6 @@ void task2()
 			cout << "Nie ma takiego dnia tygodnia!";
 			break;
 		}
-
 	}
 	// Napisz program, który wczyta numer miesi¹ca i wyœwietli jego s³owny odpowiednik.
 	void zad7()
@@ -516,7 +483,6 @@ void task2()
 		else {
 			cout << "Rok nie jest przestepny";
 		}
-		
 	}
 	// Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
 	void zad9()
@@ -614,7 +580,6 @@ void task2()
 		else {
 			cout << "Nieprawidlowa ocena!";
 		}
-
 	}
 	// Program wyœwietlaj¹cy odpowiedni komunikat w zale¿noœci od podanej oceny (np. "bardzo dobry" dla oceny 5, "dobry" dla oceny 4 itd.)
 	void zad13()
@@ -688,52 +653,13 @@ void task2()
 			cout << "Nieprawidlowa liczba! podaj liczbe wieksza od 0!	";
 			cin >> number;
 		}
-		cout << "Twoja liczba to " << number << "\n";
-
-		/*if (number < 0) {
-			cout << "Nieprawidlowa liczba! podaj dodatnia liczbe: ";
-			cin >> number;
-		}
-		if (number < 0) {
-			cout << "Nieprawidlowa liczba! podaj dodatnia liczbe: ";
-			cin >> number;
-		}
-		if (number < 0) {
-			cout << "Nieprawidlowa liczba! podaj dodatnia liczbe: ";
-			cin >> number;
-		}
-		if (number < 0) {
-			cout << "Nieprawidlowa liczba! podaj dodatnia liczbe: ";
-			cin >> number;
-		}*/
-		
-		
+		cout << "Twoja liczba to " << number << "\n";			
 	}
 
 int main()
 {
-	//task1();
-	//task2();
-	//task3();
-	//task4();
-	//task5();
-	//task6();
-	//task7();
-	//task8();
-	//task9();
+/* Taski	  */
 
-/*	Zadania	 
-	 zad1();
-	 zad2();
-	 zad3();
-	 zad4();
-	 zad5();
-	 zad6();
-	 zad7();
-	 zad8();
-	 zad9();
-	
-	zad10();*/
+/*	Zadania	 */
 	zad15();
-	
 }

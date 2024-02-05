@@ -39,8 +39,42 @@ void task1()
 
 	cout << "Podano liczbe " << number << "\n";
 }
+//
+void task2()
+{
+	int randomNumber;
+	int numberFromUser;
 
+	srand(time(0));
+	randomNumber = rand() % 101;
+	cout << "Podaj liczbe: \n";
+	cin >> numberFromUser;
+
+	do {
+		cout << "Podaj liczbe: \n";
+		cin >> numberFromUser;
+		if (numberFromUser > randomNumber)
+			cout << "Liczba za duza! \n";
+		if (numberFromUser < randomNumber)
+			cout << "Liczba za mala! \n";
+	} while (numberFromUser != randomNumber);
+cout << "Odgadles liczbe! randomowa liczba byla liczba " << randomNumber << "\n";
+
+	/*
+	if (numberFromUser != randomNumber) {
+		cout << "Podaj liczbê: \n";
+		cin >> numberFromUser;
+		if (numberFromUser != randomNumber)
+		{
+			cout << "Podaj liczbê: \n";
+			cin >> numberFromUser;
+		}
+	}
+	*/
+}
+//pozdro :]
 int main()
 {
-	task1();
+	//task1();
+	task2();
 }

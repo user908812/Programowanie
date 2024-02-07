@@ -39,7 +39,8 @@ void task1()
 
 	cout << "Podano liczbe " << number << "\n";
 }
-//
+//Napisz program, który wylosuje liczbê 
+//a nastêpnie uzytkownik bêdzie musia³ j¹ zgadn¹æ.
 void task2()
 {
 	int randomNumber;
@@ -58,23 +59,40 @@ void task2()
 		if (numberFromUser < randomNumber)
 			cout << "Liczba za mala! \n";
 	} while (numberFromUser != randomNumber);
-cout << "Odgadles liczbe! randomowa liczba byla liczba " << randomNumber << "\n";
+
+	cout << "Odgadles liczbe! randomowa liczba byla liczba " << randomNumber << "\n";
+}
+//Napisz program wyœwietlaj¹cy liczby ca³kowite z przedzia³u <0, x) (wartoœæ x podaje u¿ytkownik)
+void task3()
+{
+	long long upperRange;
+	cout << "Podaj gorny zakres (0-nieskonczonosc) \n";
+	cin >> upperRange;
+
+	cout << "0, ";
+
+	int numberFromUser = 0;
+	do
+	{
+		cout << numberFromUser << ", ";
+		numberFromUser++;
+	} while (upperRange >= numberFromUser);
 
 	/*
-	if (numberFromUser != randomNumber) {
-		cout << "Podaj liczbê: \n";
-		cin >> numberFromUser;
-		if (numberFromUser != randomNumber)
-		{
-			cout << "Podaj liczbê: \n";
-			cin >> numberFromUser;
-		}
+	if (upperRange >= 1)
+		cout << "1, ";
+		if (upperRange >= 2)
+			cout << "2, ";
+			if (upperRange >= 3)
+				cout << "3, ";
+				if (upperRange >= 4) {
+					//...
 	}
 	*/
 }
-//pozdro :]
 int main()
 {
 	//task1();
-	task2();
+	//task2();
+	task3();
 }

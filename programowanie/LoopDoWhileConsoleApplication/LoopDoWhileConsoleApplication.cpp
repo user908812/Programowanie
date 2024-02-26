@@ -90,9 +90,44 @@ void task3()
 	}
 	*/
 }
+//Napisz program, ktory policzy sume cyfr podanej przez uzytkownika liczby
+void task4()
+{
+	int number;
+	do 
+	{
+		cout << "Podaj liczbe dodatnia: \n";
+		cin >> number;
+	} while (number < 0);
+
+	int tmpNumber;
+
+	do 
+	{
+		/*
+		tmpNumber = -1;
+		do
+		{
+			tmpNumber++;
+		} while ((number - tmpNumber) % 10 != 0);
+		cout << tmpNumber << ", ";
+		*/
+		int rest = number % 10;
+		cout << rest << ", ";
+
+		number = number / 10;
+	} while (number > 0);
+}
+
 int main()
 {
 	//task1();
 	//task2();
-	task3();
+	//task3();
+	  task4();
+	//task5();
+	//task5();
+	//task5();
+	//task5();
+	//task5();
 }

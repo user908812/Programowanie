@@ -39,17 +39,18 @@ void task1()
 
 	cout << "Podano liczbe " << number << "\n";
 }
-//Napisz program, który wylosuje liczbê 
-//a nastêpnie uzytkownik bêdzie musia³ j¹ zgadn¹æ.
+//Napisz program, który wylosuje liczbê a nastêpnie uzytkownik bêdzie musia³ j¹ zgadn¹æ.
 void task2()
 {
 	int randomNumber;
 	int numberFromUser;
 
+/*------------------------------*/
 	srand(time(0));
 	randomNumber = rand() % 101;
 	cout << "Podaj liczbe: \n";
 	cin >> numberFromUser;
+/*------------------------------*/
 
 	do {
 		cout << "Podaj liczbe: \n";
@@ -101,6 +102,7 @@ void task4()
 	} while (number < 0);
 
 	int tmpNumber;
+	int sumOfDigits = 0;
 
 	do 
 	{
@@ -113,21 +115,38 @@ void task4()
 		cout << tmpNumber << ", ";
 		*/
 		int rest = number % 10;
-		cout << rest << ", ";
+		// cout << rest << ", ";
+		sumOfDigits += rest;
 
-		number = number / 10;
+		number /= 10;
+
 	} while (number > 0);
+	cout << "Suma cyfr wynosi: " << sumOfDigits << endl;
 }
-
+//Napisz program, który poprosi u¿ytkownika o wprowadzenie dowolnej liczby ca³kowitej. Nastêpnie program powinien obliczyæ i wyœwietliæ liczbê cyfr.
+void task5()
+{
+	//zrob
+}
+//Napisz program, który sprawdza czy wiêcej jest cyfr parzystych, czy nieparzystych we wczytanej liczbie.
+void task6()
+{
+	//zrob
+}
+//Poproœ u¿ytkownika o podawanie liczb, a¿ wprowadzi zero. Oblicz sumê oraz œredni¹ arytmetyczn¹ wprowadzonych liczb.
+void task7()
+{
+	//zrob
+}
 int main()
 {
 	//task1();
 	//task2();
 	//task3();
 	  task4();
-	//task5();
-	//task5();
-	//task5();
-	//task5();
-	//task5();
+	//task();
+	//task();
+	//task();
+	//task();
+	//task();
 }

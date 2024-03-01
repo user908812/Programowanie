@@ -126,24 +126,87 @@ void task4()
 //Napisz program, który poprosi u¿ytkownika o wprowadzenie dowolnej liczby ca³kowitej. Nastêpnie program powinien obliczyæ i wyœwietliæ liczbê cyfr.
 void task5()
 {
-	//zrob
+	int number;
+	do
+	{
+		cout << "Podaj liczbe dodatnia: \n";
+		cin >> number;
+
+	} while (number < 0);
+
+	int sum = 0;
+
+	do 
+	{
+		number /= 10;
+		sum++;
+	} while (number > 0);
+	cout << "Liczba cyfr to: " << sum;
 }
 //Napisz program, który sprawdza czy wiêcej jest cyfr parzystych, czy nieparzystych we wczytanej liczbie.
 void task6()
 {
-	//zrob
+	int number;
+	do
+	{
+		cout << "Podaj liczbe dodatnia: \n";
+		cin >> number;
+
+	} while (number < 0);
+
+	int evenNumber = 0;
+	int unEvenNumber = 1;
+	int rest = 0;
+
+	do
+	{
+		rest = number % 10;
+		if (rest % 2) {
+			evenNumber++;
+		}
+		else {
+			unEvenNumber++;
+		}
+
+		number /= 10;
+	} while (number > 0);
+
+	if (evenNumber > unEvenNumber) {
+		cout << "Wiecej jest liczb parzystych. Liczby parzyste: " << evenNumber;
+	}
+	else {
+		cout << "Wiecej jest liczb nieparzystych. Liczby nieparzyste: " << unEvenNumber;
+	}
 }
 //Poproœ u¿ytkownika o podawanie liczb, a¿ wprowadzi zero. Oblicz sumê oraz œredni¹ arytmetyczn¹ wprowadzonych liczb.
 void task7()
 {
-	//zrob
+	int number;
+	do
+	{
+		cout << "Podaj liczbe dodatnia: \n";
+		cin >> number;
+	} while (number < 0);
+
+	int tmpNumber;
+	int sumOfDigits = 0;
+
+	do
+	{
+		int rest = number % 10;
+		sumOfDigits += rest;
+
+		number /= 10;
+
+	} while (number > 0);
+	cout << "Suma cyfr wynosi: " << sumOfDigits << endl;
 }
 int main()
 {
 	//task1();
 	//task2();
 	//task3();
-	  task4();
+	  task6();
 	//task();
 	//task();
 	//task();

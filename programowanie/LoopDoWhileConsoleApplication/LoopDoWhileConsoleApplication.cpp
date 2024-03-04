@@ -134,14 +134,14 @@ void task5()
 
 	} while (number < 0);
 
-	int sum = 0;
+	int numberOfDigits = 0;
 
 	do 
 	{
 		number /= 10;
-		sum++;
+		numberOfDigits++;
 	} while (number > 0);
-	cout << "Liczba cyfr to: " << sum;
+	cout << "Liczba cyfr to: " << numberOfDigits;
 }
 //Napisz program, który sprawdza czy wiêcej jest cyfr parzystych, czy nieparzystych we wczytanej liczbie.
 void task6()

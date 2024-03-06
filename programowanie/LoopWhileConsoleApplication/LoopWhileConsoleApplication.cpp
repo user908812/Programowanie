@@ -24,32 +24,61 @@ void task1()
 }
 
 //Napisz program, który policzy NWD dwóch liczb.
+//NWD(a,b) = a jeœli b = 0
+//NWD(a,b) = NWD(b, a%b) jeœli b != 0
 void task2()
 {
+	int a;
+	std::cout << "Podaj pierwsz¹ liczbê\n";
+	std::cin >> a;
+
+	int b;
+	std::cout << "Podaj drug¹ liczbê\n";
+	std::cin >> b;
 	/*
-	 b==0, nwd = a
-	 b != 0, nwd = b, a % b (18 / 12) (reszta z dzielenia)
-	*/
-
-	int a, b;
-	cout << "Podaj pierwsza liczbe: \n";
-	cin >> a;
-	cout << "Podaj druga liczbe: \n";
-	cin >> b;
-
 	if (b != 0)
 	{
 		int tmpA = a;
 		a = b;
 		b = tmpA % b;
-		if (b != 0) {
+		if (b != 0)
+		{
 			//...
 		}
-		cout << "NWD = " << a << "\n";
-		}
 	}
+	*/
+	while (b != 0)
+	{
+		int tmpA = a;
+		a = b;
+		b = tmpA % b;
+	}
+
+	std::cout << "NWD = " << a << "\n";
+}
+//Miasto T. ma obecnie 100 tys. mieszkañców, ale jego populacja roœnie co roku o 3% rocznie. 
+//Miasto B. ma 300 tys. mieszkañców i ta liczba roœnie w tempie 2% na rok.
+// Wykonaj symulacjê prezentuj¹c¹ liczbê mieszkañców w obu miastach i zatrzymuj¹c¹ siê, 
+// gdy liczba mieszkañców miasta T. przekroczy liczbê z miasta B.
+
+void task3()
+{
+	double cityT = 100000,
+	double	cityB = 300000;
+
+	int year = 0;
+
+	while (cityT < cityB)
+	{
+		cityT = cityT * 1.03;
+		cityB = cityB * 1.02;
+		year++;
+	}
+	cout << "Miasto T przegoni Miasto B po " << year << " latach\n";
+}
 int main()
 {
 	//task1();
-	  task2();
+	//task2();
+	  task3();
 }

@@ -1,7 +1,6 @@
 /* FirstConsoleApplication.cpp : This file contains the 'main' function. Program execution begins and ends there.
 
 
-
    Ctrl + D = linijka w dol
    Ctrl + K + D = formatowanie kodu
    Ctrl + K + C = wykomendowanie kodu,  Ctrl + K + U = usuwanie odkomendowania

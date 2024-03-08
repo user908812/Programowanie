@@ -6,7 +6,7 @@ using namespace std;
 void task1()
 {
 	int numberFromUser;
-	
+
 	cout << "Podaj liczbe wieksza od 0: \n";
 	cin >> numberFromUser;
 
@@ -19,7 +19,7 @@ void task1()
 		}
 		cout << "Liczba cyfr twojej liczby to: " << sumOfDigits << ".\n";
 	}
-	else 
+	else
 		cout << "Liczba nie jest wieksza od 0! Sprobuj ponownie! \n";
 }
 
@@ -63,8 +63,8 @@ void task2()
 
 void task3()
 {
-	double cityT = 100000,
-	double	cityB = 300000;
+	/*double cityT = 100000,
+		double	cityB = 300000;
 
 	int year = 0;
 
@@ -74,11 +74,51 @@ void task3()
 		cityB = cityB * 1.02;
 		year++;
 	}
-	cout << "Miasto T przegoni Miasto B po " << year << " latach\n";
+	cout << "Miasto T przegoni Miasto B po " << year << " latach\n";*/
+}
+//Sprawdzanie czy liczba jest palindromem.
+void task4()
+{
+	int number;
+	cout << "Podaj liczbe dodatnia: \n";
+	cin >> number;
+
+	int tmpNumber = number;
+	int reverseNumber = 0;
+
+	while (tmpNumber > 0)
+	{
+		int rest = tmpNumber % 10;
+		reverseNumber = reverseNumber * 10 + rest;
+		tmpNumber = tmpNumber / 10;
+	}
+	if (number == reverseNumber)
+		cout << "Liczba jest palindromem.\n";
+	else
+		cout << "Liczba nie jest palindromem.\n";
+}
+//Napisz program, ktory wyswietli "Hello World" tyle razy ile chce uzytkownik
+void task5()
+{
+	string helloWorld = "Hello World";
+	int hwCounter;
+	cout << "Ile razy program ma wyswietlic hello world?: ";
+	cin >> hwCounter;
+
+	cout << endl;
+
+	int counter = 0;
+
+	while (counter != hwCounter) {
+		cout << helloWorld << "\n";
+		counter++;
+	}
 }
 int main()
 {
 	//task1();
 	//task2();
-	  task3();
+	//task3();
+	//task4();
+	task5();
 }

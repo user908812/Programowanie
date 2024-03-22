@@ -63,7 +63,8 @@ void task2()
 
 void task3()
 {
-	/*double cityT = 100000,
+	/*
+	double cityT = 100000,
 		double	cityB = 300000;
 
 	int year = 0;
@@ -74,7 +75,8 @@ void task3()
 		cityB = cityB * 1.02;
 		year++;
 	}
-	cout << "Miasto T przegoni Miasto B po " << year << " latach\n";*/
+	cout << "Miasto T przegoni Miasto B po " << year << " latach\n";
+	*/
 }
 //Sprawdzanie czy liczba jest palindromem.
 void task4()

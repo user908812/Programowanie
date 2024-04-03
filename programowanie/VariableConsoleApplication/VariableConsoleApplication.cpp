@@ -1,12 +1,7 @@
 /*
 prawy przycisk myszy, set as startup project
 */
-<<<<<<< HEAD
 #include <iostream>
-
-void wiek()
-=======
-
 
 /*
 
@@ -43,7 +38,6 @@ void wiek()
 #include <iostream>
 
 void wiek() 
->>>>>>> a3b3ebf92b0ba63999bdf2926dd1eb62a89f19b2
 {
 	// napisz program, ktory wczyta od uzytkownika jego wiek a nastepnie wyswietli go na konsoli
 	short wiek;
@@ -69,21 +63,16 @@ void zmianajednostek()
 
 void task1()
 {
-<<<<<<< HEAD
 	//Napisz program, który poprosi u¿ytkownika o podanie d³ugoœci boku a i b prostok¹ta, a nastêpnie obliczy i wyœwietli pole prostok¹ta. /  jsbhfisi
 	float bok1, bok2;
-=======
 	//Napisz program, ktÃ³ry poprosi uÂ¿ytkownika o podanie dÂ³ugoÅ“ci boku a i b prostokÂ¹ta, a nastÃªpnie obliczy i wyÅ“wietli pole prostokÂ¹ta. /  jsbhfisi
 	float bok1, bok2;	
->>>>>>> a3b3ebf92b0ba63999bdf2926dd1eb62a89f19b2
 	std::cout << "Podaj bok a \n";
 	std::cin >> bok1;
 	std::cout << "Podaj bok b \n";
 	std::cin >> bok2;
 	std::cout << "Pole prostokata wynosi: " << bok1 * bok2;
 }
-
-<<<<<<< HEAD
 void task2()
 {
 	//napisz program, który poprosi u¿ytkownika o podanie d³ugoœci podstawy i wysokoœci trójk¹ta, a nastêpnie obliczy pole tego trójk¹ta, wyœwietlaj¹c wynik.
@@ -91,7 +80,6 @@ void task2()
 	std::cout << "podaj dlugosc podstawy trojkata";
 	std::cin >> a;
 	std::cout << "podaj wysokosc trojkata";
-=======
 void trojkat()
 {
 	//Napisz program, ktÃ³ry poprosi uÂ¿ytkownika o podanie dÂ³ugoÅ“ci podstawy i wysokoÅ“ci trÃ³jkÂ¹ta, a nastÃªpnie obliczy pole tego trÃ³jkÂ¹ta, wyÅ“wietlajÂ¹c wynik.
@@ -99,7 +87,6 @@ void trojkat()
 	std::cout << "Podaj dlugosc podstawy trojkata \n";
 	std::cin >> a;
 	std::cout << "Podaj wysokosc trojkata \n";
->>>>>>> a3b3ebf92b0ba63999bdf2926dd1eb62a89f19b2
 	std::cin >> h;
 	std::cout << "pole trojkata wynosi: " << a / 2 * h;
 }
@@ -200,8 +187,6 @@ void task11()
 	std::cout << "Podaj b \n";
 	std::cin >> b;
 	std::cout << "Wynik dodawania: " << a + b << "\n" << "Wynik odejmowania: " << a - b << "\n" << "Wynik mnozenia: " << a * b << "\n" << "Wynik dzielenia: " << a / b;
-
-<<<<<<< HEAD
 }
 void task12()
 {
@@ -245,7 +230,6 @@ int main()
 	//task12();
 	//task13();
 }
-=======
 
 
 

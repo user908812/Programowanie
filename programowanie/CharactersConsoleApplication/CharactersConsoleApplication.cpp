@@ -43,10 +43,6 @@ void task3()
 
     cout << "Witaj " << username << '!' << endl;
 }
-// program sprawdzajacy czy haslo jest poprawne
-// np. jesli haslo jest 'abc123'
-// program ma wyswietlic 'haslo poprawne'
-// jesli jest inne, wyswietli 'haslo niepoprawne'
 void task4()
 {
     string password;
@@ -123,6 +119,57 @@ void task7()
     cout << "Liczba samoglosek: " << counter;
     cout << "Liczba spolglosek: " << counter2;
 }
+// Poproœ u¿ytkownika o wprowadzenie liczby ca³kowitej w systemie dziesiêtnym.Nastêpnie skonwertuj tê liczbê na system dwójkowy(binarny) i wyœwietl wynik.
+void task8()
+{
+    int numberFromUser;
+    cout << "Podaj liczbe: \n";
+    cin >> numberFromUser;
+
+    int tmpNumber = numberFromUser;
+    string binaryNumber = "";
+
+    do {
+        int rest = tmpNumber % 2;
+        tmpNumber = tmpNumber / 2;
+
+        if (rest == 0)
+            binaryNumber = "0" + binaryNumber;
+        else
+            binaryNumber = "1" + binaryNumber;
+
+    } while (tmpNumber != 0);
+
+    cout << "Liczba " << numberFromUser << " binarnie to " << binaryNumber << '\n';
+}
+// Program sprawdzaj¹cy czy podany ci¹g znaków jest palindromem (czyli takim, który czytany od ty³u jest taki sam, jak czytany od przodu, np. "kajak")
+void task9()
+{
+    string wordFromUser;
+    cout << "Podaj wyraz: \n";
+    cin >> wordFromUser;
+
+    bool isPalindrome = true;
+
+    for (int fromStart = 0, fromEnd = wordFromUser.length() - 1; fromStart < fromEnd; fromStart++, fromEnd--) {
+        if (wordFromUser[fromStart] != wordFromUser[fromEnd]) {
+            isPalindrome = false;
+            break;
+        }
+    }
+    if (isPalindrome)
+        cout << "Wyraz jest palindromem \n";
+    else
+        cout << "Wyraz nie jest palindromem \n";
+}
+// Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami (czyli takimi, które zawieraj¹ te same litery, ale w innym uk³adzie, np. "klasa" i "salka")
+void task10() {}
+// Program wyci¹gaj¹cy informacje z numeru PESEL
+void task11() {
+}
+// Program implementuj¹cy algorytm szyfrowania Cezara (proste szyfrowanie, w którym ka¿dy znak w tekœcie jest zastêpowany innym znakiem, przesuniêtym o sta³¹ liczbê pozycji w alfabecie).
+void task12() {}
+
 int main()
 {
    /* task1();*/
@@ -131,5 +178,8 @@ int main()
    /* task4();*/
    /* task5();*/
    /* task6();*/
-    task7();
+   /* task7();*/
+   /* task8();*/
+   /* task9();*/
+   /* task10();*/
 }

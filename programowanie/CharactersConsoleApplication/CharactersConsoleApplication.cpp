@@ -11,7 +11,6 @@ void task1()
 
     cout << characterFromUser << endl;
 
-
     characterFromUser = 'a' + 2; // c
 
     cout << characterFromUser << endl;
@@ -162,14 +161,29 @@ void task9()
     else
         cout << "Wyraz nie jest palindromem \n";
 }
-// Program sprawdzaj¹cy czy podane dwa s³owa s¹ anagramami (czyli takimi, które zawieraj¹ te same litery, ale w innym uk³adzie, np. "klasa" i "salka")
-void task10() {}
-// Program wyci¹gaj¹cy informacje z numeru PESEL
-void task11() {
-}
-// Program implementuj¹cy algorytm szyfrowania Cezara (proste szyfrowanie, w którym ka¿dy znak w tekœcie jest zastêpowany innym znakiem, przesuniêtym o sta³¹ liczbê pozycji w alfabecie).
-void task12() {}
+// Napisz program, ktory wczyta np. 5 liczb i wyswietli je w odwrotnej kolejnosci.
+void task10()
+{
+    int num1, num2, num3, num4;
 
+    cout << "Podaj 1 liczbe: " << endl;
+    cin >> num1;
+    cout << "Podaj 2 liczbe: " << endl;
+    cin >> num2;
+    cout << "Podaj 3 liczbe: " << endl;
+    cin >> num3;
+    cout << "Podaj 4 liczbe: " << endl;
+    cin >> num4;
+
+    for (int n = 1; n < 5; n++) {
+        cout << "Podaj " << n << " liczbe" << endl;
+        /*cin >> number + n;*/
+    }
+
+    cout << num4 << ", " << num3 << ", " << num2 << ", " << num1 << endl;
+    int sum = num1 + num2 + num3 + num4;
+    double avg = sum / 4.0;
+}
 int main()
 {
    /* task1();*/
@@ -181,5 +195,5 @@ int main()
    /* task7();*/
    /* task8();*/
    /* task9();*/
-   /* task10();*/
+    task10();
 }

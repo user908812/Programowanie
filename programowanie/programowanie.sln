@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03. Kolekcje", "03. Kolekcj
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CharactersConsoleApplication", "CharactersConsoleApplication\CharactersConsoleApplication.vcxproj", "{3F6B49EA-C49D-4E55-975F-566E373974E4}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ArrayConsoleApplication", "ArrayConsoleApplication\ArrayConsoleApplication.vcxproj", "{2DF84DD5-0192-4043-9989-5761DE9A1BB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -87,6 +89,14 @@ Global
 		{3F6B49EA-C49D-4E55-975F-566E373974E4}.Release|x64.Build.0 = Release|x64
 		{3F6B49EA-C49D-4E55-975F-566E373974E4}.Release|x86.ActiveCfg = Release|Win32
 		{3F6B49EA-C49D-4E55-975F-566E373974E4}.Release|x86.Build.0 = Release|Win32
+		{2DF84DD5-0192-4043-9989-5761DE9A1BB2}.Debug|x64.ActiveCfg = Debug|x64
+		{2DF84DD5-0192-4043-9989-5761DE9A1BB2}.Debug|x64.Build.0 = Debug|x64
+		{2DF84DD5-0192-4043-9989-5761DE9A1BB2}.Debug|x86.ActiveCfg = Debug|Win32
+		{2DF84DD5-0192-4043-9989-5761DE9A1BB2}.Debug|x86.Build.0 = Debug|Win32
+		{2DF84DD5-0192-4043-9989-5761DE9A1BB2}.Release|x64.ActiveCfg = Release|x64
+		{2DF84DD5-0192-4043-9989-5761DE9A1BB2}.Release|x64.Build.0 = Release|x64
+		{2DF84DD5-0192-4043-9989-5761DE9A1BB2}.Release|x86.ActiveCfg = Release|Win32
+		{2DF84DD5-0192-4043-9989-5761DE9A1BB2}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -99,6 +109,7 @@ Global
 		{997C471D-36D5-49D9-B30A-95647FC95CC4} = {A5732953-25E9-44E4-B264-5EEA7D382969}
 		{AA4F61FC-0D5F-45E9-8E7D-2C74D88FB5B8} = {A5732953-25E9-44E4-B264-5EEA7D382969}
 		{3F6B49EA-C49D-4E55-975F-566E373974E4} = {83DF6B59-14F5-4DAC-9DC9-FDC3FE460BD8}
+		{2DF84DD5-0192-4043-9989-5761DE9A1BB2} = {83DF6B59-14F5-4DAC-9DC9-FDC3FE460BD8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D16EA75-9670-4F5A-878C-966D38902DD4}

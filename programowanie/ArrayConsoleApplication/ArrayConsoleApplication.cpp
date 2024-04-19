@@ -42,7 +42,7 @@ void task2()
 
     for (int n = 0; n < ARRAY_SIZE; n++) 
     {
-        numbers[n] = rand() % 11; // <-- liczby od 0 do 100
+        numbers[n] = rand() % 11; // <-- liczby od 0 do 10
         cout << numbers[n] << ", ";
     }
     cout << "\n\n";
@@ -57,8 +57,69 @@ void task2()
     cout << "Suma wynosi " << sum;
     cout << "Srednia wynosi " << average;
 }
+// Napisz program ktory uzupelni tablice
+// losowymi liczbami i znajdzie minimum i maximum
+void task3()
+{
+    const unsigned int ARRAY_SIZE = 10;
+    int numbers[ARRAY_SIZE];
+
+    srand(time(0));
+    cout << "Liczby w kolekcji: " << endl;
+
+    for (int n = 0; n < ARRAY_SIZE; n++)
+    {
+        numbers[n] = rand() % 11;
+        cout << numbers[n] << ", ";
+    }
+    cout << "\n\n";
+
+    int maxNumber = numbers[0];
+
+    for (int n = 0; n < ARRAY_SIZE; n++)
+    {
+        if (numbers[n] > maxNumber)
+            maxNumber = numbers[n];
+    }
+    cout << "Najwieksza liczba to " << maxNumber << endl;
+    
+    int minNumber = numbers[0];
+
+    for (int n = 0; n < ARRAY_SIZE; n++)
+    {
+        if (numbers[n] < minNumber)
+            minNumber = numbers[n];
+    }
+    cout << "Najmniejsza liczba to " << minNumber << endl;
+}
+// Napisz program ktory wyswietli number dnia tygodnia
+// a nastepnie wyswietli jego nazwe lub komunikat bledu
+void task4()
+{
+    int day;
+    cout << "Podaj numer dnia tygodnia: ";
+    cin >> day;
+
+    string dayName[7] = {"Poniedzialek", "Wtorek", "Sroda"};
+    dayName[0] = "Poniedzialek";
+    dayName[1] = "Wtorek";
+    dayName[2] = "Sroda";
+    dayName[3] = "Czwartek";
+    dayName[4] = "Piatek";
+    dayName[5] = "Sobota";
+    dayName[6] = "Niedziela";
+
+    if (day <= 0 && day >= 6) {
+        cout << "Nazwa dnia to " << dayName[day] << endl;
+    } else {
+        cout << "Nieprawidlowy dzien tygodnia!";
+    }
+        
+}
 int main()
 {
  // task1();
-  task2();
+//  task2();
+//  task3();
+    task4();
 }

@@ -96,30 +96,101 @@ void task3()
 // a nastepnie wyswietli jego nazwe lub komunikat bledu
 void task4()
 {
-    int day;
+    int day; 
+    string NONE = "", Monday = "Poniedzialek", Tuesday = "Wtorek", Wednesday = "Sroda", Thursday = "Czwartek", Friday = "Piatek", Saturday = "Sobota", Sunday = "Niedziela";
+
     cout << "Podaj numer dnia tygodnia: ";
     cin >> day;
 
-    string dayName[7] = {"Poniedzialek", "Wtorek", "Sroda"};
-    dayName[0] = "Poniedzialek";
-    dayName[1] = "Wtorek";
-    dayName[2] = "Sroda";
-    dayName[3] = "Czwartek";
-    dayName[4] = "Piatek";
-    dayName[5] = "Sobota";
-    dayName[6] = "Niedziela";
+    string days[8] = {NONE, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
 
-    if (day <= 0 && day >= 6) {
-        cout << "Nazwa dnia to " << dayName[day] << endl;
+    if (day >= 1 && day <= 7) {
+        cout << "Nazwa dnia to " << days[day] << endl;
     } else {
-        cout << "Nieprawidlowy dzien tygodnia!";
+        cout << "Nieprawidlowy dzien tygodnia" << endl;
     }
-        
 }
-int main()
+/*
+Sortowanie przez wybor - powtarzamy dla kazdego elementu w kolekcji od lewej do prawej oprocz ostatniego, warunek i zamieniamy miejscami 2 pozycje. Powtarzamy.
+*/
+
+// 
+void task5() 
 {
- // task1();
-//  task2();
-//  task3();
-    task4();
+    const unsigned int ARRAY_SIZE = 10;
+    int numbers[ARRAY_SIZE];
+
+    srand(time(NULL));
+    cout << "Liczby w kolekcji: \n";
+
+    for (int n = 0; n < ARRAY_SIZE; n++)
+    {
+        numbers[n] = rand() % 11;
+        cout << numbers[n] << ", ";
+    }
+    cout << "\n\n";
+    
+    // Algorytm sortujacy
+
+    for (int n = 0; n <= ARRAY_SIZE - 2; n++) 
+    {
+        int minIndex = n;
+        for (int i = n + 1; i < ARRAY_SIZE; i++) 
+        {
+            if (numbers[i] < numbers[minIndex])
+                minIndex = i;
+        }
+        int tmp = numbers[n];
+        numbers[n] = numbers[minIndex];
+        numbers[minIndex] = tmp;
+    }
+
+    cout << "Po sortowaniu: \n";
+    for (int n = 0; n < ARRAY_SIZE; n++) 
+    {
+        cout << numbers[n] << ", ";
+    }
+    cout << "\n\n";
 }
+/*
+    Sortowanie babelkowe - porownujemy pozycje 1 z 2, 3 z 4, 5 z 6 itd. (i zwiekszamy o 1).
+*/
+void task6() 
+{
+    const unsigned int ARRAY_SIZE = 10;
+    int numbers[ARRAY_SIZE];
+
+    srand(time(NULL));
+    cout << "Liczby w kolekcji: \n";
+
+    for (int n = 0; n < ARRAY_SIZE; n++)
+    {
+        numbers[n] = rand() % 11;
+        cout << numbers[n] << ", ";
+    }
+    cout << "\n\n";
+    
+    // Algorytm sortujacy
+
+    for (int n = 0; n < ARRAY_SIZE - 1; n++) 
+    {
+        int minIndex = n;
+        for (int i = 0; i < ARRAY_SIZE; i++) 
+        {
+            if (numbers[i] < numbers[i + 1])
+            {
+                int tmp = numbers[n];
+                numbers[n] = numbers[minIndex];
+                numbers[minIndex] = tmp;
+            }
+        }
+    }
+
+    cout << "Po sortowaniu: \n";
+    for (int n = 0; n < ARRAY_SIZE; n++) 
+    {
+        cout << numbers[n] << ", ";
+    }
+    cout << "\n\n";
+}
+int main() { task5(); }

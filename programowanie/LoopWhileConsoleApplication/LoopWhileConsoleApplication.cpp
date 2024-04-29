@@ -116,11 +116,4 @@ void task5()
 		counter++;
 	}
 }
-int main()
-{
-	//task1();
-	//task2();
-	//task3();
-	//task4();
-	task5();
-}
+int main(){ task5(); }

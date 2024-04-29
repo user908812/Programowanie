@@ -201,15 +201,4 @@ void task7()
 	} while (number > 0);
 	cout << "Suma cyfr wynosi: " << sumOfDigits << endl;
 }
-int main()
-{
-	//task1();
-	//task2();
-	//task3();
-	  task6();
-	//task();
-	//task();
-	//task();
-	//task();
-	//task();
-}
+int main(){ task6(); }

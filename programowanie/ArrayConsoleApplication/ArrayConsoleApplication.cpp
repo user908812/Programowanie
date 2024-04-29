@@ -153,10 +153,15 @@ void task5()
     cout << "\n\n";
 }
 /*
-    Sortowanie babelkowe - porownujemy pozycje 1 z 2, 3 z 4, 5 z 6 itd. (i zwiekszamy o 1).
+
+    Sortowanie przez wybor - przechodzi przez tablice, znajduje najmniejszy element i umieszcza go na poczatku tablicy (i to sie powtarza przechodzac tylko raz)
+
+    Sortowanie babelkowe - porownuje sasiednie elementy i zamienia je, jesli sa w zlej kolejnosci (przechodzac kilka razy przez tablice) do momentu az zostanie posortowana
+
 */
 void task6() 
 {
+    system("color 4F");
     const unsigned int ARRAY_SIZE = 10;
     int numbers[ARRAY_SIZE];
 
@@ -193,4 +198,16 @@ void task6()
     }
     cout << "\n\n";
 }
-int main() { task5(); }
+void openVSCode(bool shouldOpen) {
+
+    if (shouldOpen) {
+        cout << "Trwa otwieranie visual studio code..." << endl;
+        system("code .");
+    } else {
+        cout << "Brak pozwolenia na otworzenie VSCode!" << endl;
+    }
+}
+int main() {
+    openVSCode(false);
+    /*task6();*/ 
+}

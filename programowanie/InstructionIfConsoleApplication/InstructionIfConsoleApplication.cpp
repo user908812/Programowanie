@@ -47,7 +47,6 @@ t  t	  t       t
 void task1() 
 {
 	//Napisz program ktory pobierze liczbe od uzytkownika i wyswietli czy jest ona dodatnia czy nie
-	using namespace std;
 	int number;
 	cout << "Podaj liczbe \n";
 	cin >> number;
@@ -99,7 +98,6 @@ void task2()
 
 	void task3()
 	{
-		using namespace std;
 		int firstNumber;
 		cout << "Podaj liczbe\n";
 		cin >> firstNumber;
@@ -109,7 +107,6 @@ void task2()
 
 	void task4()
 	{
-		using namespace std;
 		int firstNumber, secondNumber;
 		cout << "Podaj liczbe\n";
 		cin >> firstNumber;
@@ -132,7 +129,6 @@ void task2()
 
 	void task5()
 	{
-		using namespace std;
 		int firstNumber, secondNumber, thirdNumber;
 		cout << "Podaj liczbe\n";
 		cin >> firstNumber;
@@ -168,7 +164,6 @@ void task2()
 	}
 	void task6()
 	{
-		using namespace std;
 		int firstNumber, secondNumber, thirdNumber, fourthNumber;
 		cout << "Podaj pierwsza liczbe ";
 		cin >> firstNumber;
@@ -199,7 +194,6 @@ void task2()
 	// Napisz program ktory wczyta 1 liczbe i wyswietli ja w kolejnosci rosnacej
 	void task7()
 	{
-		using namespace std;
 		int firstNum;
 		cout << "Podaj pierwsza liczbe: ";
 		cin >> firstNum;
@@ -209,7 +203,6 @@ void task2()
 	}
 	void task8()
 	{
-		using namespace std;
 		int firstNum, secondNum;
 		cout << "Podaj pierwsza liczbe:	";
 		cin >> firstNum;
@@ -224,7 +217,6 @@ void task2()
 	}
 	void task9()
 	{
-		using namespace std;
 		int firstNum, secondNum, thirdNum;
 		cout << "Podaj pierwsza liczbe: ";
 		cin >> firstNum;
@@ -264,7 +256,6 @@ void task2()
 	// Napisz program, który poprosi u¿ytkownika o podanie dwóch liczb ca³kowitych i sprawdzi, czy s¹ one równe.Wyœwietl odpowiedni komunikat.
 	void zad1()
 	{
-		using namespace std;
 		int num1, num2;
 		cout << "Podaj pierwsza liczbe: ";
 		cin >> num1;
@@ -280,7 +271,6 @@ void task2()
 	// Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i sprawdzi, czy jest ona parzysta.Wyœwietl odpowiedni komunikat.
 	void zad2()
 	{
-		using namespace std;
 		int num;
 		cout << "Podaj liczbe:	";
 		cin >> num;
@@ -295,7 +285,6 @@ void task2()
 	// Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i sprawdzi, czy jest ona podzielna zarówno przez 3, jak i przez 5. Wyœwietl odpowiedni komunikat.
 	void zad3()
 	{
-		using namespace std;
 		int num;
 		cout << "Podaj liczbe: ";
 		cin >> num;
@@ -317,7 +306,6 @@ void task2()
 	// Napisz program, który poprosi u¿ytkownika o podanie masy cia³a (w kilogramach) i wzrostu (w metrach).
 	void zad4()
 	{
-		using namespace std;
 		float bodyWeight, Height;
 		cout << "Podaj swoj wzrost: ";
 		cin >> Height;
@@ -338,7 +326,6 @@ void task2()
 		powy¿ej 40.0 - oty³oœæ skrajn¹ */
 	void zad5()
 	{
-		using namespace std;
 		float bodyWeight, Height;
 		cout << "Podaj swoj wzrost: ";
 		cin >> Height;
@@ -377,7 +364,6 @@ void task2()
 	// Napisz program, który poprosi u¿ytkownika o podanie liczby od 1 do 7 i wyœwietli odpowiadaj¹cy mu dzieñ tygodnia.
 	void zad6()
 	{
-		using namespace std;
 		int num;
 		cout << "Podaj liczbe 1-7: ";
 		cin >> num;
@@ -413,7 +399,6 @@ void task2()
 	// Napisz program, który wczyta numer miesi¹ca i wyœwietli jego s³owny odpowiednik.
 	void zad7()
 	{
-		using namespace std;
 		int month;
 		cout << "Podaj numer 1-12 \n";
 		cin >> month;
@@ -472,7 +457,6 @@ void task2()
 	// Napisz program, który poprosi u¿ytkownika o podanie roku i sprawdzi, czy jest to rok przestêpny.Wyœwietl odpowiedni komunikat.
 	void zad8()
 	{
-		using namespace std;
 		int year;
 		cout << "Wpisz dowolny rok:\n";
 		cin >> year;
@@ -487,7 +471,6 @@ void task2()
 	// Napisz program, który poprosi u¿ytkownika o podanie liczby ca³kowitej i obliczy jej wartoœæ bezwzglêdn¹. Wyœwietl wynik.
 	void zad9()
 	{
-		using namespace std;
 		int yourNumber;
 		cout << "Podaj dowolna liczbe calkowita \n";
 		cin >> yourNumber;
@@ -507,7 +490,6 @@ void task2()
 	// Napisz program, który poprosi u¿ytkownika o podanie wieku i sprawdzi, czy osoba jest pe³noletnia. Wyœwietl odpowiedni komunikat.
 	void zad10()
 	{
-		using namespace std;
 		int age;
 		cout << "Podaj swoj wiek \n";
 		cin >> age;
@@ -656,10 +638,4 @@ void task2()
 		cout << "Twoja liczba to " << number << "\n";			
 	}
 
-int main()
-{
-/* Taski	  */
-
-/*	Zadania	 */
-	zad15();
-}
+int main() { zad15(); }

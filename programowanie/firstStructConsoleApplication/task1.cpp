@@ -2,13 +2,18 @@
 using namespace std;
 
 // Napisz program ktory pobierze wspolrzedne 2D i obliczy jak daleko jest ten punkt od srodka uk. wspolrzednych
+
+void getCoordinate(double &x, double &y) {
+	cout << "Podaj x: " << endl;
+	cin >> x;
+	cout << "Podaj y: " << endl;
+	cin >> y;
+}
+
 void task1() {
 	const bool rounded = false;
 	double x, y;
-	cout << "Podaj pozycje X: " << endl;
-	cin >> x;
-	cout << "Podaj pozycje Y: " << endl;
-	cin >> y;
+	getCoordinate(x, y);
 
 	const double result = sqrt(x * x + y * y);
 

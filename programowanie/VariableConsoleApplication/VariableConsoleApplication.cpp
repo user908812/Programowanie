@@ -224,8 +224,8 @@ int main() {
  Wymagania kompilatora wzgledem nazwy:
  * uzycie tylko dozwolonych znakow
  - alfabet angielski a-z oraz A-Z
- -cyfry arabskie 0-9
- -podloga _
+ - cyfry arabskie 0-9
+ - podloga _
  - pierwszym znakiem nie moze byc cyfra
  - nie moze to byc slowo kluczowe danego jezyka programowania
  - musi byc unikalna w danej widocznosci

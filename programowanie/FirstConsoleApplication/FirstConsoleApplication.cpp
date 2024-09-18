@@ -14,7 +14,7 @@
 int main() {
 	std::cout << "Hello World!" << std::endl;
 	std::cout << "test" << std::endl;
-	std::cout << "te\tst 2\n";
+	std::cout << "te\t st 2\n";
 	std::cout << 'D';
 	std::cout << '\n';
 	std::cout << 69420 + 1 << std::endl;

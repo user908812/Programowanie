@@ -177,7 +177,7 @@ void task10()
 
     for (int n = 1; n < 5; n++) {
         cout << "Podaj " << n << " liczbe" << endl;
-        /*cin >> number + n;*/
+        // cin >> number + n;
     }
 
     cout << num4 << ", " << num3 << ", " << num2 << ", " << num1 << endl;
@@ -186,14 +186,5 @@ void task10()
 }
 int main()
 {
-   /* task1();*/
-   /* task2();*/
-   /* task3();*/
-   /* task4();*/
-   /* task5();*/
-   /* task6();*/
-   /* task7();*/
-   /* task8();*/
-   /* task9();*/
     task10();
 }

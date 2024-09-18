@@ -248,8 +248,7 @@ void task2()
 			if (firstNum < secondNum && secondNum < thirdNum) {
 				cout << thirdNum << "," << secondNum << "," << firstNum;
 			}
-		}
-		else {
+		} else {
 			cout << "2 lub 3 liczby sa rowne! Sprobuj ponownie!";
 		}
 	}
@@ -367,7 +366,7 @@ void task2()
 		int num;
 		cout << "Podaj liczbe 1-7: ";
 		cin >> num;
-		// Switch case zamiast if!
+		
 		switch (num)
 		{
 		case 1:
@@ -638,4 +637,6 @@ void task2()
 		cout << "Twoja liczba to " << number << "\n";			
 	}
 
-int main() { zad15(); }
+int main() { 
+	zad15(); 
+}

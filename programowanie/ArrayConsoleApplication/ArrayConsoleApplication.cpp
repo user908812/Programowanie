@@ -114,7 +114,6 @@ void task4()
 Sortowanie przez wybor - powtarzamy dla kazdego elementu w kolekcji od lewej do prawej oprocz ostatniego, warunek i zamieniamy miejscami 2 pozycje. Powtarzamy.
 */
 
-// 
 void task5() 
 {
     const unsigned int ARRAY_SIZE = 10;
@@ -209,5 +208,4 @@ void openVSCode(bool shouldOpen) {
 }
 int main() {
     openVSCode(false);
-    /*task6();*/ 
 }

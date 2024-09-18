@@ -116,4 +116,6 @@ void task5()
 		counter++;
 	}
 }
-int main(){ task5(); }
+int main() {
+	task5(); 
+}

@@ -85,7 +85,9 @@ void task4()
 // Program sprawdzający czy podana liczba jest liczbą doskonałą (czyli taką, której suma dzielników (z wyłączeniem samej siebie) jest równa danej liczbie, np. 6 jest liczbą doskonałą, ponieważ 1 + 2 + 3 = 6).
 void task5()
 {
-	NULL;
+	//ser
 }
 
-int main(){ task4(); }
+int main() { 
+	task4();
+}

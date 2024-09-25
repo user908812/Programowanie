@@ -1,31 +1,33 @@
 #include <iostream>
 using namespace std;
 
-static void getCoordinate(double& x, double& y) {
-	cout << "Podaj x: " << endl;
-	cin >> x;
-	cout << "Podaj y: " << endl;
-	cin >> y;
-}
-
-struct let {
-	long double x;
-	long double y;
+struct point {
+	double x;
+	double y;
 };
 
-void task2() {
-	const bool rounded = false;
-	let firstPoint;
-	//let secondPoint;
-	
-	firstPoint.x = 5;
-	//getCoordinate(x, y);
+static void getCoordinate(point p) {
+	cout << "Podaj x: " << endl;
+	cin >> p.x;
+	cout << "Podaj y: " << endl;
+	cin >> p.y;
+}
 
-	//const double result = sqrt(x * x + y * y);
+void task2()
+{
+	const bool rounded = false;
+	point firstPoint;
+	firstPoint.x = 7;
+	firstPoint.y = 0;
+
+	getCoordinate(firstPoint);
+
+	const double result = sqrt(firstPoint.x * firstPoint.x + firstPoint.y * firstPoint.y);
 
 	if (rounded) {
 		cout << "Odleglosc od srodka wynosi " << round(result) << endl;
-	} else {
+	}
+	else {
 		cout << "Odleglosc od srodka wynosi " << result << endl;
 	}
 }

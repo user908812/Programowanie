@@ -23,22 +23,3 @@ void task1() {
 		cout << "Odleglosc od srodka wynosi " << result << endl;
 	}
 }
-
-//void test(char op, int n1, int n2) {
-//	switch (op) {
-//		case '+':
-//			cout << "Wynik to " << n1 + n2;
-//			break;
-//		case '-':
-//			cout << "Wynik to " << n1 - n2;
-//			break;
-//		case '*':
-//			cout << "Wynik to " << n1 * n2;
-//			break;
-//		case '/':
-//			cout << "Wynik to " << n1 / n2;
-//			break;
-//		default:
-//			break;
-//	}
-//}

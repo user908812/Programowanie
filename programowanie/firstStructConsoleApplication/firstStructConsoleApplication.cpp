@@ -1,6 +1,8 @@
 #include "tasks.h"
+#include <iostream>
 
 int main()
 {
-	task2();
+	system("color 04");
+	task3();
 }

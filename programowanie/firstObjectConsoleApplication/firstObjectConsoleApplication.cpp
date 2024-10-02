@@ -1,7 +1,8 @@
 #include <iostream>
+
 using namespace std;
 
-struct bankAccount {
+class bankAccount {
 	double balance;
 	string owner;
 	string currency;
@@ -30,8 +31,11 @@ void transferBetweenAccounts(bankAccount& account1, bankAccount& account2, doubl
 	}
 }
 
-void task3() {
-	bankAccount firstAccount;
+int main()
+{
+    system("color 04");
+
+	bankAccount firstAccount; // obiekt (zmienna typu klasowego)
 	firstAccount.owner = "Jan Nowak";
 	firstAccount.balance = 5000;
 	firstAccount.currency = "zl";
@@ -41,9 +45,8 @@ void task3() {
 	secondAccount.balance = 12000;
 	secondAccount.currency = "zl";
 
-	//increaseAccountBalance(firstAccount, 12.99);
-	//decreaseAccountBalance(secondAccount, 10.01);
-
+	increaseAccountBalance(firstAccount, 10.00);
+	decreaseAccountBalance(secondAccount, 10.00);
 	transferBetweenAccounts(secondAccount, firstAccount, 1000);
 
 	getAccountInfo(firstAccount);

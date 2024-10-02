@@ -26,8 +26,7 @@ void task2()
 
 	if (rounded) {
 		cout << "Odleglosc od srodka wynosi " << round(result) << endl;
-	}
-	else {
+	} else {
 		cout << "Odleglosc od srodka wynosi " << result << endl;
 	}
 }

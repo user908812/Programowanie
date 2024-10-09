@@ -1,38 +1,5 @@
 #include <iostream>
-
-using namespace std;
-
-class BankAccount {
-
-public:
-	double balance;
-	string owner;
-	string currency;
-
-	void GetAccountInfo() { // metoda -> funkcja w klasie
-		cout << "Owner: " << owner << "\n";
-		cout << "Your balance: " << balance << "\n";
-		cout << "Currency: " << currency << "\n\n";
-	}
-
-	void increaseAccountBalance(double amount) {
-		balance += abs(amount);
-	}
-};
-
-bool decreaseAccountBalance(BankAccount& acc, double amount) {
-	if (acc.balance - amount >= 0) {
-		acc.balance -= amount;
-		return true;
-	}
-	return false;
-}
-
-void transferBetweenAccounts(BankAccount& account1, BankAccount& account2, double amount) {
-	if (decreaseAccountBalance(account1, amount) == true) {
-		account2.increaseAccountBalance(amount);
-	}
-}
+#include "BankAccount.h"
 
 int main()
 {
@@ -48,9 +15,9 @@ int main()
 	secondAccount.balance = 12000;
 	secondAccount.currency = "zl";
 
-	firstAccount.increaseAccountBalance(10.00);
-	decreaseAccountBalance(secondAccount, 10.00);
-	transferBetweenAccounts(secondAccount, firstAccount, 1000);
+	firstAccount.DepositToAccount(10.00);
+	secondAccount.WidthdrawalFromAccount(10.00);
+	secondAccount.TransferBetweenAccounts(firstAccount, 1000);
 
 	firstAccount.GetAccountInfo();
 }

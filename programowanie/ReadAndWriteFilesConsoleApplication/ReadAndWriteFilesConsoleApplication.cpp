@@ -15,11 +15,15 @@ int main()
 
     ofstream writeInFile;
 
-    writeInFile.open("c:\\pierwszyPlik.txt");
+    writeInFile.open("c:\\Olek 2D\\pierwszyPlik.txt", ios::app); // ios::app (przeciwienstwo nadpisywania pliku)
 
     if (writeInFile.is_open()) {
-        writeInFile << "Imie: " << name << "\nWiek: " << age;
-    }
+        writeInFile << "\nImie: " << name << "\nWiek: " << age << endl;
+        writeInFile.flush();  // Wymuszenie wypchniecia danych
+        writeInFile << "------";
 
-    writeInFile.close();
+        writeInFile.close();
+    } else {
+        cout << "Blad w wczytywaniu pliku lub w sciezce!";
+    }
 }

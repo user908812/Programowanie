@@ -21,7 +21,7 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{de1d179e-e47e-4b16-906d-90b0391ea5dc}</ProjectGuid>
+    <ProjectGuid>{bcd0c621-d708-4e9a-9912-6600c2444e78}</ProjectGuid>
     <RootNamespace>ReadAndWriteFilesConsoleApplication</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>

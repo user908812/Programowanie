@@ -3,8 +3,7 @@
 
 using namespace std;
 
-int main()
-{
+void task1() {
     string name;
     int unsigned age;
 
@@ -18,12 +17,35 @@ int main()
     writeInFile.open("c:\\Olek 2D\\pierwszyPlik.txt", ios::app); // ios::app (przeciwienstwo nadpisywania pliku)
 
     if (writeInFile.is_open()) {
-        writeInFile << "\nImie: " << name << "\nWiek: " << age << endl;
+        writeInFile << name;
+        writeInFile << "\n";
         writeInFile.flush();  // Wymuszenie wypchniecia danych
-        writeInFile << "------";
+        writeInFile << age << "\n";
 
         writeInFile.close();
-    } else {
-        cout << "Blad w wczytywaniu pliku lub w sciezce!";
+    } else cout << "Blad w wczytywaniu pliku lub w sciezce!";
+}
+
+void task2() {
+    string name;
+    int unsigned age;
+    ifstream readFromFile;
+
+    readFromFile.open("c:\\Olek 2D\\pierwszyPlik.txt");
+
+    if (readFromFile.is_open()) {
+
+        while (!readFromFile.eof()) { // EndOfFile
+            readFromFile >> name;
+            readFromFile >> age;
+
+            cout << "Imie: " << name << ", Wiek: " << age << endl;
+        }
+        readFromFile.close();
     }
+}
+
+int main()
+{
+    task2();
 }

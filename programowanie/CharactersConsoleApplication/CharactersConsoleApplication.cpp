@@ -1,3 +1,6 @@
+
+// Char przechowuje liczby od -128 do 127
+
 #include <iostream>
 
 using namespace std;

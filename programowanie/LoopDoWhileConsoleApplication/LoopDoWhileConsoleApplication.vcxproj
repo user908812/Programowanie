@@ -24,6 +24,7 @@
     <ProjectGuid>{a4772936-f260-4bab-a1ea-0d20316c02bd}</ProjectGuid>
     <RootNamespace>LoopDoWhileConsoleApplication</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>LoopDoWhile</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

@@ -5,11 +5,12 @@ using namespace std;
 
 class BankAccount {
 
-public:
-	double balance;
+private:
+	long double balance;
 	string owner;
 	string currency;
 
+public:
 	void GetAccountInfo();
 
 	void DepositToAccount(double amount);

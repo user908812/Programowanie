@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{dbd7a67b-b295-421b-a5eb-fa186f96d7ae}</ProjectGuid>
-    <RootNamespace>VariableConsoleApplication</RootNamespace>
+    <ProjectGuid>{dded371d-8b3b-473f-84ec-8efc334d1a68}</ProjectGuid>
+    <RootNamespace>StringConsoleApplication</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>Variable</ProjectName>
+    <ProjectName>String</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,7 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="VariableConsoleApplication.cpp" />
+    <ClCompile Include="StringConsoleApplication.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

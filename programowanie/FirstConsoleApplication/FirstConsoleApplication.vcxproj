@@ -24,6 +24,7 @@
     <ProjectGuid>{25ea6920-a42e-4e7a-9df0-c0e0d066eae2}</ProjectGuid>
     <RootNamespace>FirstConsoleApplication</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>FirstConsoleApplication</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

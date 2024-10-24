@@ -24,6 +24,7 @@
     <ProjectGuid>{a76c50b1-9b5f-4ef5-94bc-f595811196d9}</ProjectGuid>
     <RootNamespace>funcConsoleApplication</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Function</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">

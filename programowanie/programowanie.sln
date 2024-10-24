@@ -43,6 +43,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "firstObjectConsoleApplicati
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReadAndWriteFilesConsoleApplication", "ReadAndWriteFilesConsoleApplication\ReadAndWriteFilesConsoleApplication.vcxproj", "{BCD0C621-D708-4E9A-9912-6600C2444E78}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StringConsoleApplication", "StringConsoleApplication\StringConsoleApplication.vcxproj", "{DDED371D-8B3B-473F-84EC-8EFC334D1A68}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -147,6 +149,14 @@ Global
 		{BCD0C621-D708-4E9A-9912-6600C2444E78}.Release|x64.Build.0 = Release|x64
 		{BCD0C621-D708-4E9A-9912-6600C2444E78}.Release|x86.ActiveCfg = Release|Win32
 		{BCD0C621-D708-4E9A-9912-6600C2444E78}.Release|x86.Build.0 = Release|Win32
+		{DDED371D-8B3B-473F-84EC-8EFC334D1A68}.Debug|x64.ActiveCfg = Debug|x64
+		{DDED371D-8B3B-473F-84EC-8EFC334D1A68}.Debug|x64.Build.0 = Debug|x64
+		{DDED371D-8B3B-473F-84EC-8EFC334D1A68}.Debug|x86.ActiveCfg = Debug|Win32
+		{DDED371D-8B3B-473F-84EC-8EFC334D1A68}.Debug|x86.Build.0 = Debug|Win32
+		{DDED371D-8B3B-473F-84EC-8EFC334D1A68}.Release|x64.ActiveCfg = Release|x64
+		{DDED371D-8B3B-473F-84EC-8EFC334D1A68}.Release|x64.Build.0 = Release|x64
+		{DDED371D-8B3B-473F-84EC-8EFC334D1A68}.Release|x86.ActiveCfg = Release|Win32
+		{DDED371D-8B3B-473F-84EC-8EFC334D1A68}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -170,6 +180,7 @@ Global
 		{0BAB042D-5C9D-46A9-9FCB-AF745CD4F770} = {93E752AB-1033-4872-945B-55AFDB01DC4B}
 		{4600D5DC-3AFB-49B2-85D0-897103DAF533} = {0BAB042D-5C9D-46A9-9FCB-AF745CD4F770}
 		{BCD0C621-D708-4E9A-9912-6600C2444E78} = {0BAB042D-5C9D-46A9-9FCB-AF745CD4F770}
+		{DDED371D-8B3B-473F-84EC-8EFC334D1A68} = {0BAB042D-5C9D-46A9-9FCB-AF745CD4F770}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7D16EA75-9670-4F5A-878C-966D38902DD4}

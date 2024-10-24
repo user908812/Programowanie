@@ -24,6 +24,7 @@
     <ProjectGuid>{6f9777db-6324-4772-a87a-e9d6b32889fc}</ProjectGuid>
     <RootNamespace>firstStructConsoleApplication</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>FirstStruct</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,7 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="firstStructConsoleApplication.cpp" />
+    <ClCompile Include="FirstStruct.cpp" />
     <ClCompile Include="task1.cpp" />
     <ClCompile Include="task2.cpp" />
     <ClCompile Include="task3.cpp" />

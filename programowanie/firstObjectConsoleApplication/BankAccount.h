@@ -8,6 +8,7 @@ class BankAccount {
 private:
 	long double balance;
 public:
+	BankAccount();
 	void SetBalance(long double b);
 	void DepositToAccount(double amount);
 	void WidthdrawalFromAccount(double amount);
@@ -15,10 +16,4 @@ public:
 	string currency;
 	void GetAccountInfo();
 	double GetBalance();
-	
-	BankAccount() {
-		balance = 0;
-		owner = "Unknown";
-		currency = "zl";
-	}
 };

@@ -1,6 +1,12 @@
 #include <iostream>
 #include "BankAccount.h"
 
+BankAccount::BankAccount(double b, string o, string c) {
+	balance = b;
+	owner = o;
+	currency = c;
+}
+
 void BankAccount::SetBalance(long double b) {
 	double absBalance = balance * (-1);
 	if (b < 0) absBalance = b;

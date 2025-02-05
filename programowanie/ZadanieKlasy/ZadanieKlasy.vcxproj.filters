@@ -15,15 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="firstObjectConsoleApplication.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="BankAccount.cpp">
+    <ClCompile Include="ZadanieKlasy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BankAccount.h">
+    <ClInclude Include="Square.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,29 +1,35 @@
 #include <iostream>
 #include "BankAccount.h"
 
-BankAccount::BankAccount(double b, string o, string c) {
+BankAccount::BankAccount(double b, string o, string c) 
+{
 	balance = b;
 	owner = o;
 	currency = c;
 }
 
-void BankAccount::SetBalance(long double b) {
+void BankAccount::SetBalance(long double b) 
+{
 	double absBalance = balance * (-1);
 	if (b < 0) absBalance = b;
 	if (b >= 0) balance = b;
 }
-double BankAccount::GetBalance() {
+double BankAccount::GetBalance() 
+{
 	return balance;
 }
 
-void BankAccount::GetAccountInfo() {
+void BankAccount::GetAccountInfo() 
+{
 	cout << "Balance: " << balance << currency << "\n";
 	cout << "Owner: " << owner << "\n";
 }
-void BankAccount::DepositToAccount(double amount) {
+void BankAccount::DepositToAccount(double amount) 
+{
 	balance += (amount < 0) ? abs(amount) : amount;
 }
-void BankAccount::WidthdrawalFromAccount(double amount) {
+void BankAccount::WidthdrawalFromAccount(double amount) 
+{
 	balance -= (amount < 0) ? abs(amount) : amount;
 }
 
@@ -33,12 +39,12 @@ int main()
 
 	BankAccount firstAccount; // obiekt (zmienna typu klasowego)
 	firstAccount.SetBalance(0);
-	firstAccount.currency = "zl";
-	firstAccount.owner = "Stanislaw";
+	/*firstAccount.currency = "zl";
+	firstAccount.owner = "Stanislaw";*/
 
 	BankAccount secondAccount;
 	secondAccount.SetBalance(12000);
-	secondAccount.currency = "zl";
+	/*secondAccount.currency = "zl";*/
 
 	firstAccount.DepositToAccount(10.00);
 	secondAccount.WidthdrawalFromAccount(10.00);

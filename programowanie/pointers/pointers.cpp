@@ -18,6 +18,6 @@ int main()
     *ptr = 69;
     cout << "firstVar: " << firstVar << '\n';
 
-    bool* boolPtr;
+    bool *boolPtr;
     boolPtr = &thirdVar;
 }

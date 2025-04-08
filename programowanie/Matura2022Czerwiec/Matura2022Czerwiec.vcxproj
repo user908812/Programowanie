@@ -129,10 +129,6 @@
   <ItemGroup>
     <ClCompile Include="Matura2022Czerwiec.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <CopyFileToFolders Include="..\..\..\..\Users\Sala213\Desktop\liczby.txt" />
-    <CopyFileToFolders Include="..\..\..\..\Users\Sala213\Desktop\przyklad.txt" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

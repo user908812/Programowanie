@@ -19,12 +19,4 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
-  <ItemGroup>
-    <CopyFileToFolders Include="..\..\..\..\Users\Sala213\Desktop\liczby.txt">
-      <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-    <CopyFileToFolders Include="..\..\..\..\Users\Sala213\Desktop\przyklad.txt">
-      <Filter>Resource Files</Filter>
-    </CopyFileToFolders>
-  </ItemGroup>
 </Project>

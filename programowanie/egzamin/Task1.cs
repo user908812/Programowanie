@@ -1,36 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+/*
+      ->  Egzamin 2023-01 (01)
+*/
 
-namespace egzamin
+public class NWD
 {
-
-    internal class Task1
+    public void Calculate(int a, int b)
     {
+        if (a < 0 || b < 0) Console.WriteLine("Liczby maja byc dodatnie");
 
-        public class NWD
+        Console.WriteLine($"NWD Liczb {a} i {b} to:");
+
+        while (b != 0)
         {
-            public void Oblicz(int a, int b)
-            {
-                if (a < 0 || b < 0) Console.WriteLine("Liczby maja byc dodatnie");
-
-                Console.WriteLine($"NWD Liczb {a} i {b} to:");
-
-                while (b != 0)
-                {
-                    int temp = b;
-                    b = a % b;
-                    a = temp;
-                }
-
-                Console.WriteLine(a);
-            }
+            int temp = b;
+            b = a % b;
+            a = temp;
         }
 
-        
+        Console.WriteLine(a);
     }
+
+
 
     //public void Task()
     //{
